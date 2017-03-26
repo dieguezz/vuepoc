@@ -22,6 +22,12 @@ module.exports = {
   */
   loading: { color: '#3B8070' },
   /*
+  ** Router configurations
+  */
+  router: {
+    middleware: 'i18n'
+  },
+  /*
   ** Build configuration
   */
   build: {
@@ -37,9 +43,6 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    },
-    router: {
-      middleware: 'i18n'
     },
     vendor: ['axios']
   },
