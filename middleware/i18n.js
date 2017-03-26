@@ -1,4 +1,5 @@
-export default async function ({ store, params, error }) {
+import store from '~store'
+export default async function ({ params, error }) {
   const lang = params.lang || 'en'
   if (!store.state.lang.locales.includes(lang)) {
     await store.dispatch('lang/setLang', 'en')
