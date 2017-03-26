@@ -34,6 +34,7 @@ module.exports = {
     /*
     ** Run ESLINT on save
     */
+    vendor: ['axios'],
     extend (config, ctx) {
       if (ctx.isClient) {
         config.module.rules.push({
@@ -43,8 +44,15 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
+<<<<<<< Updated upstream
     },
     vendor: ['axios']
+=======
+    }
+  },
+  router: {
+    middleware: 'i18n'
+>>>>>>> Stashed changes
   },
   plugins: ['~plugins/i18n']
 }

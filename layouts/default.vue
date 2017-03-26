@@ -1,6 +1,5 @@
 <template>
   <div>
-    {{ $t('links.home') }}
     <nuxt/>
     <my-footer/>
   </div>
